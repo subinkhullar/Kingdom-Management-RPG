@@ -5,17 +5,17 @@
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#0d0c11",
-  "theme_color": "#121016",
+  "background_color": "#0e0d13",
+  "theme_color": "#16141f",
   "categories": ["games", "roleplaying", "strategy"],
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192' width='192' height='192'%3E%3Crect width='192' height='192' fill='%23121016' rx='36'/%3E%3Cpath d='M40 128 L24 40 L68 80 L96 32 L124 80 L168 40 L152 128 Z M152 152 C152 156.4 148.4 160 144 160 L48 160 C43.6 160 40 156.4 40 152 L40 144 L152 144 Z' fill='%23d4af37'/%3E%3C/svg%3E",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192' width='192' height='192'%3E%3Crect width='192' height='192' fill='%2316141f' rx='38'/%3E%3Ctext x='96' y='126' font-size='96' text-anchor='middle' dominant-baseline='central'%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E",
       "sizes": "192x192",
       "type": "image/svg+xml"
     },
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'%3E%3Crect width='512' height='512' fill='%23121016' rx='96'/%3E%3Cpath d='M106 341 L64 106 L181 213 L256 85 L330 213 L448 106 L405 341 Z M405 405 C405 417 395 426 384 426 L128 426 C116 426 106 417 106 405 L106 384 L405 384 Z' fill='%23d4af37'/%3E%3C/svg%3E",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='512' height='512'%3E%3Crect width='512' height='512' fill='%2316141f' rx='100'/%3E%3Ctext x='256' y='330' font-size='256' text-anchor='middle' dominant-baseline='central'%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E",
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
