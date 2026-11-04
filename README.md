@@ -284,11 +284,6 @@ echoes-of-the-iron-crown/
 ├── service-worker.js
 ├── manifest.json
 │
-├── assets/
-│   ├── icons/
-│   ├── images/
-│   └── sounds/
-│
 └── README.md
 ```
 
@@ -296,7 +291,7 @@ echoes-of-the-iron-crown/
 
 #### index.html
 
-Main application entry point.
+Main application entry point
 
 Contains:
 
