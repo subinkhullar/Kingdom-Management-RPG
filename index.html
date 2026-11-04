@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Echoes of the Iron Crown - Kingdom Management RPG by Subin Khullar. Every choice becomes history. Every history becomes destiny.">
+  <meta name="theme-color" content="#121016">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Echoes of the Iron Crown™</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand-group">
+        <svg class="crown-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z"/>
+        </svg>
+        <div class="title-box">
+          <h1>ECHOES OF THE IRON CROWN™</h1>
+          <p>"Every choice becomes history. Every history becomes destiny."</p>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <div class="status-badge" title="Kingdom Era / Year">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2A10 10 0 1,0 22 12A10 10 0 0,0 12 2M12 4A8 8 0 1,1 4 12A8 8 0 0,1 12 4M12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/></svg>
+          <span id="label-year">Year 1 (Spring)</span>
+        </div>
+        <div class="status-badge" title="Kingdom Realm Tier">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7L12 12L22 7L12 2M2 17L12 22L22 17L12 12L2 17M2 12L12 17L22 12L12 7L2 12Z"/></svg>
+          <span id="label-tier">Village</span>
+        </div>
+        <div class="status-badge" title="Weather Condition">
+          <span id="label-weather">☀️ Sunny</span>
+        </div>
+      </div>
+
+      <nav class="header-nav" aria-label="Main Navigation">
+        <button class="btn-nav active" data-tab="court" title="Court [C]">👑 Court</button>
+        <button class="btn-nav" data-tab="quests" title="Quests [Q]">⚔️ Quests</button>
+        <button class="btn-nav" data-tab="factions" title="Factions [F]">🛡️ Factions</button>
+        <button class="btn-nav" data-tab="timeline" title="Timeline [T]">📜 Timeline</button>
+        <button class="btn-nav" data-tab="stats" title="Statistics [S]">📊 Stats</button>
+        <button class="btn-nav" data-tab="achievements" title="Badges [B]">🏆 Badges</button>
+        <button class="btn-nav" data-tab="settings" title="Options [O]">⚙️ Config</button>
+      </nav>
+    </header>
+
+    <!-- RESOURCE TRACKERS (9 Core Resources) -->
+    <section class="resource-dashboard" id="res-bar-container" aria-label="Kingdom Resources">
+      <!-- Injected dynamically via JS with SVG icons -->
+    </section>
+
+    <!-- MAIN INTERACTIVE HUB -->
+    <main class="main-grid">
+      <!-- LEFT SIDEBAR: KINGDOM DETAILS & RULER -->
+      <aside class="panel sidebar-panel">
+        <h2>
+          <span>Ruler & Dynasty</span>
+          <span class="badge-stat" id="ruler-legacy-level">Gen I</span>
+        </h2>
+        <div class="petitioner-banner" style="padding: 8px;">
+          <div class="petitioner-avatar" id="avatar-monarch">
+            <!-- Dynamic Monarch SVG -->
+          </div>
+          <div>
+            <h4 id="ruler-name">King Alden I</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted);" id="ruler-dynasty">House of the Iron Gate</p>
+            <p style="font-size: 0.72rem; color: var(--primary);" id="ruler-archetype">Pragmatic Sovereign</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 0.85rem; margin-bottom: 6px; color: var(--text-muted);">Personality Traits</h3>
+          <div class="traits-list" id="traits-container">
+            <!-- Trait Pills -->
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 0.85rem; margin-bottom: 6px; color: var(--text-muted);">Council Advisors</h3>
+          <div class="faction-list" id="advisors-container">
+            <!-- Advisors injected -->
+          </div>
+        </div>
+
+        <button class="btn-sec" id="btn-next-turn" style="width: 100%; margin-top: auto; font-weight: bold; padding: 10px;">
+          Pass Royal Turn [Space]
+        </button>
+      </aside>
+
+      <!-- CENTER: COURT & NARRATIVE STAGE -->
+      <section class="center-stage" id="stage-viewport">
+        <!-- COURT CASE PANEL -->
+        <div class="court-card" id="court-card-element">
+          <div class="petitioner-banner">
+            <div class="petitioner-avatar" id="petitioner-portrait">
+              <!-- SVG generated avatar -->
+            </div>
+            <div class="petitioner-info">
+              <h3 id="petitioner-name">Master Corvus</h3>
+              <div class="petitioner-title" id="petitioner-role">Master of Coin</div>
+              <div class="faction-tag" id="petitioner-faction">Merchants Guild</div>
+            </div>
+          </div>
+
+          <div class="case-description">
+            <h4 id="case-title" style="color: var(--primary); margin-bottom: 6px;">The Smuggler's Toll</h4>
+            <p id="case-body">Eastern smugglers have been caught evading royal harbor tariffs. The harbor master requests permission to impound all their vessels, while the merchants warn it will choke off scarce winter supplies.</p>
+            <p class="case-quote" id="case-quote">"Sire, gold in the vault feeds no soldiers if our warehouses sit empty."</p>
+          </div>
+
+          <!-- 6 DECISION TYPES (Approve, Reject, Investigate, Compromise, Delay, Delegate) -->
+          <div class="choices-grid" id="court-choices-grid">
+            <!-- Injected dynamically -->
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDEBAR: REPUTATION & FACTIONS SNAPSHOT -->
+      <aside class="panel sidebar-panel">
+        <h2>
+          <span>Realm Factions</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Allegiance</span>
+        </h2>
+        <div class="faction-list" id="factions-container">
+          <!-- 8 Factions Injected -->
+        </div>
+
+        <h2 style="margin-top: 8px;">
+          <span>Active Quests</span>
+          <span class="badge-stat" id="quest-active-count">0</span>
+        </h2>
+        <div class="timeline-feed" id="quests-snapshot" style="max-height: 180px;">
+          <!-- Quick Quests -->
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>(C) 2026 Subin Khullar. All rights reserved.</div>
+      <div class="shortcuts-bar">
+        <span>Hotkeys:</span>
+        <span class="shortcut-pill">1-6 Choices</span>
+        <span class="shortcut-pill">Space Turn</span>
+        <span class="shortcut-pill">C Court</span>
+        <span class="shortcut-pill">Q Quests</span>
+        <span class="shortcut-pill">T History</span>
+        <span class="shortcut-pill">S Stats</span>
+        <span class="shortcut-pill">B Badges</span>
+        <span class="shortcut-pill">? Help</span>
+      </div>
+      <div>Echoes of the Iron Crown™ v2.6.0 PWA</div>
+    </footer>
+  </div>
+
+  <!-- POPUP MODALS -->
+  <div class="modal-overlay hidden" id="generic-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h2 id="modal-title">Kingdom Chronicles</h2>
+        <button class="btn-close" id="btn-modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- APPLICATION SCRIPT -->
+  <script src="app.js"></script>
+</body>
+</html>
