@@ -467,7 +467,7 @@ class GameUI {
       card.innerHTML = `
         <div class="res-header">
           <span class="res-title">
-            <svg class="res-icon" viewBox="0 0 24 24" fill="currentColor">${meta.icon}</svg>
+            <svg class="res-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">${meta.icon}</svg>
             ${meta.name}
           </span>
           <span class="res-val" style="color: ${color}">${val}</span>
@@ -487,7 +487,7 @@ class GameUI {
     document.getElementById('ruler-legacy-level').innerText = `Gen ${this.state.ruler.generation}`;
 
     document.getElementById('avatar-monarch').innerHTML = `
-      <svg viewBox="0 0 100 100" width="100%" height="100%">
+      <svg viewBox="0 0 100 100" width="44" height="44" style="display:block;">
         <rect width="100" height="100" fill="#1b1726"/>
         <circle cx="50" cy="45" r="24" fill="#deb887"/>
         <path d="M30 32 L50 14 L70 32 L62 30 L50 24 L38 30 Z" fill="#ffd700"/>
@@ -532,7 +532,7 @@ class GameUI {
       const row = document.createElement('div');
       row.className = 'faction-row';
       row.innerHTML = `
-        <div class="faction-icon" style="background: ${f.color}; border-radius: 4px;"></div>
+        <div class="faction-icon" style="background: ${f.color};"></div>
         <div class="faction-meta">
           <div class="faction-meta-head">
             <span>${f.name}</span>
@@ -576,7 +576,7 @@ class GameUI {
     document.getElementById('case-quote').innerText = c.quote;
 
     document.getElementById('petitioner-portrait').innerHTML = `
-      <svg viewBox="0 0 80 80" width="100%" height="100%">
+      <svg viewBox="0 0 80 80" width="52" height="52" style="display:block;">
         <rect width="80" height="80" fill="#181520"/>
         <circle cx="40" cy="38" r="18" fill="#e0ac69"/>
         <path d="M22 75 C22 55 58 55 58 75 Z" fill="${faction.color}"/>
@@ -796,16 +796,16 @@ class GameUI {
   triggerGameOver(title, reason) {
     this.sound.playSfx('doom');
     const modalBody = `
-      <div style="text-align: center; padding: 20px;">
-        <h2 style="color: var(--danger); font-size: 1.8rem; margin-bottom: 10px;">${title}</h2>
-        <p style="font-size: 1rem; margin-bottom: 20px;">${reason}</p>
-        <div style="background: var(--bg-card); padding: 16px; border-radius: 6px; margin-bottom: 20px; text-align: left;">
+      <div style="text-align: center; padding: 16px;">
+        <h2 style="color: var(--danger); font-size: 1.5rem; margin-bottom: 8px;">${title}</h2>
+        <p style="font-size: 0.9rem; margin-bottom: 16px;">${reason}</p>
+        <div style="background: var(--bg-card); padding: 12px; border-radius: 6px; margin-bottom: 16px; text-align: left; font-size: 0.82rem;">
           <p><strong>Years Ruled:</strong> ${this.state.stats.yearsRuled}</p>
           <p><strong>Total Petitions Heard:</strong> ${this.state.stats.casesHeard}</p>
           <p><strong>Highest Kingdom Tier:</strong> ${KINGDOM_LEVELS.find(l => l.level === this.state.level).title}</p>
           <p><strong>Dynasty:</strong> ${this.state.ruler.dynasty}</p>
         </div>
-        <button class="btn-action" id="btn-restart-game" style="font-size: 1.1rem; padding: 12px 24px;">Crown a New Heir</button>
+        <button class="btn-action" id="btn-restart-game" style="font-size: 0.95rem; padding: 10px 20px;">Crown a New Heir</button>
       </div>
     `;
     this.openModal('The Fall of the Crown', modalBody);
@@ -828,29 +828,29 @@ class GameUI {
     `).join('');
 
     this.openModal('Interactive Kingdom Timeline', `
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px;">
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px;">
         A historical ledger of imperial decrees, wars, discoveries, and milestones.
       </p>
-      <div class="timeline-feed" style="max-height: 500px;">${itemsHtml}</div>
+      <div class="timeline-feed" style="max-height: 440px;">${itemsHtml}</div>
     `);
   }
 
   openStatsModal() {
     const body = `
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 16px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px;">
         <div class="faction-row"><div class="faction-meta"><span>Years Ruled</span><h3>${this.state.stats.yearsRuled}</h3></div></div>
         <div class="faction-row"><div class="faction-meta"><span>Turns Played</span><h3>${this.state.stats.turnsPlayed}</h3></div></div>
         <div class="faction-row"><div class="faction-meta"><span>Cases Resolved</span><h3>${this.state.stats.casesHeard}</h3></div></div>
         <div class="faction-row"><div class="faction-meta"><span>Quests Finished</span><h3>${this.state.stats.questsCompleted}</h3></div></div>
       </div>
-      <h3 style="color: var(--primary); margin-bottom: 6px;">Resource Fluctuation (Historical Trajectory)</h3>
+      <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 0.85rem;">Resource Trajectory</h3>
       <div class="canvas-wrap">
         <canvas id="stats-chart"></canvas>
       </div>
-      <div style="display: flex; gap: 8px; margin-top: 10px;">
-        <button class="btn-sec" id="btn-export-json">Export Save (JSON)</button>
-        <button class="btn-sec" id="btn-export-txt">Export Chronicle (TXT)</button>
-        <button class="btn-sec" id="btn-export-html">Export Royal Dossier (HTML)</button>
+      <div style="display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap;">
+        <button class="btn-sec" id="btn-export-json">Export (JSON)</button>
+        <button class="btn-sec" id="btn-export-txt">Chronicle (TXT)</button>
+        <button class="btn-sec" id="btn-export-html">Dossier (HTML)</button>
       </div>
     `;
     this.openModal('Imperial Statistics & Trajectory', body);
@@ -922,26 +922,26 @@ class GameUI {
     `).join('');
 
     this.openModal('Imperial Hall of Deeds & Badges', `
-      <h3 style="color: var(--primary); margin-bottom: 8px;">Collectible Badges</h3>
-      <div class="grid-achievements" style="margin-bottom: 16px;">${badgesHtml}</div>
-      <h3 style="color: var(--primary); margin-bottom: 8px;">Kingdom Achievements (100)</h3>
-      <div class="grid-achievements" style="max-height: 380px; overflow-y: auto;">${achieveHtml}</div>
+      <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 0.88rem;">Collectible Badges</h3>
+      <div class="grid-achievements" style="margin-bottom: 12px;">${badgesHtml}</div>
+      <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 0.88rem;">Kingdom Achievements (100)</h3>
+      <div class="grid-achievements" style="max-height: 340px; overflow-y: auto;">${achieveHtml}</div>
     `);
   }
 
   openQuestsModal() {
     let questsHtml = this.state.activeQuests.map(q => `
-      <div class="court-card" style="margin-bottom: 10px;">
-        <h3>${q.title}</h3>
-        <p style="font-size: 0.85rem; color: var(--text-muted);">${q.desc}</p>
-        <div class="res-bar-wrap" style="margin-top: 8px;">
+      <div class="court-card" style="margin-bottom: 8px; padding: 12px;">
+        <h3 style="font-size: 0.95rem;">${q.title}</h3>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">${q.desc}</p>
+        <div class="res-bar-wrap" style="margin-top: 6px;">
           <div class="res-bar" style="width: ${q.progress}%;"></div>
         </div>
       </div>
     `).join('');
 
     this.openModal('Crown Objectives & Grand Quests', `
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Fulfill royal ambitions to stabilize the realm and harvest sovereign prestige.</p>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">Fulfill royal ambitions to stabilize the realm and harvest sovereign prestige.</p>
       ${questsHtml || '<p>All active quests fulfilled. Awaiting frontier envoys...</p>'}
     `);
   }
@@ -950,14 +950,14 @@ class GameUI {
     let factionsHtml = FACTIONS.map(f => {
       const val = this.state.factions[f.id] || 50;
       return `
-        <div class="faction-row" style="padding: 12px;">
-          <div class="faction-icon" style="background: ${f.color}; width: 36px; height: 36px; border-radius: 6px;"></div>
+        <div class="faction-row" style="padding: 8px 10px;">
+          <div class="faction-icon" style="background: ${f.color}; width: 20px; height: 20px; border-radius: 4px;"></div>
           <div class="faction-meta">
             <div class="faction-meta-head">
-              <strong style="font-size: 0.95rem;">${f.name}</strong>
+              <strong style="font-size: 0.85rem;">${f.name}</strong>
               <span style="color: var(--primary);">${val}% Allegiance</span>
             </div>
-            <p style="font-size: 0.78rem; color: var(--text-muted);">${f.desc} Leader: ${f.leader}</p>
+            <p style="font-size: 0.72rem; color: var(--text-muted);">${f.desc} Leader: ${f.leader}</p>
           </div>
         </div>
       `;
@@ -970,8 +970,8 @@ class GameUI {
 
   openHelpModal() {
     this.openModal('How to Play & Kingdom Guide', `
-      <div style="font-size: 0.9rem; line-height: 1.6;">
-        <h4 style="color: var(--primary);">Rules of Sovereignty</h4>
+      <div style="font-size: 0.85rem; line-height: 1.5;">
+        <h4 style="color: var(--primary); margin-bottom: 4px;">Rules of Sovereignty</h4>
         <p>1. Every choice in court has immediate and delayed consequences. Gold, food, and military upkeep sustain your citizens.</p>
         <p>2. Keep resources balanced between 0 and 100. If any vital resource hits zero, your kingdom risks violent collapse.</p>
         <p>3. Competing factions demand respect. Favoring one often antagonizes its rivals.</p>
@@ -982,7 +982,7 @@ class GameUI {
 
   openSettingsModal() {
     const body = `
-      <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem;">
         <div>
           <label><strong>Visual Theme:</strong></label>
           <select id="select-theme" class="btn-sec" style="width: 100%; margin-top: 4px;">
@@ -997,7 +997,7 @@ class GameUI {
         </div>
         <div>
           <label><strong>Accessibility:</strong></label>
-          <div style="display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap;">
+          <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
             <button class="btn-sec" id="btn-toggle-contrast">Toggle High Contrast</button>
             <button class="btn-sec" id="btn-toggle-text">Toggle Large Text</button>
             <button class="btn-sec" id="btn-toggle-motion">Toggle Reduced Motion</button>
@@ -1005,10 +1005,10 @@ class GameUI {
         </div>
         <div>
           <label><strong>Audio Synthesizer:</strong></label>
-          <div style="display: flex; gap: 8px; margin-top: 6px;">
+          <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
             <button class="btn-sec" id="btn-mute-audio">${this.sound.muted ? 'Unmute Audio' : 'Mute Audio'}</button>
-            <button class="btn-sec" id="btn-theme-royal">Play Royal Theme</button>
-            <button class="btn-sec" id="btn-theme-battle">Play Battle Theme</button>
+            <button class="btn-sec" id="btn-theme-royal">Royal Theme</button>
+            <button class="btn-sec" id="btn-theme-battle">Battle Theme</button>
           </div>
         </div>
         <div>
