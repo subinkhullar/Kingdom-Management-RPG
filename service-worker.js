@@ -4,7 +4,7 @@
  * (C) 2026 Subin Khullar. All rights reserved.
  */
 
-const CACHE_NAME = 'iron-crown-v2.6.0';
+const CACHE_NAME = 'iron-crown-v2.8.0';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
