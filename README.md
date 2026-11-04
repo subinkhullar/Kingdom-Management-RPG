@@ -2,17 +2,27 @@
 
 ### Every Choice Becomes History. Every History Becomes Destiny.
 
-**Echoes of the Iron Crown™** is an immersive fantasy kingdom-management RPG where every decision shapes the future of a living, evolving realm. Rule as the rightful bearer of the Iron Crown, oversee your kingdom's growth, resolve disputes in royal court, forge alliances, survive disasters, and build an enduring legacy through strategic choices and branching storylines.
+**Echoes of the Iron Crown™** is an immersive fantasy kingdom-management RPG where every decision shapes the future of a living, evolving realm. Rule as the rightful bearer of the Iron Crown, oversee your kingdom's growth, resolve disputes in the royal court, forge alliances, survive disasters, and build an enduring legacy through strategic choices and branching storylines.
 
 Developed as a standalone HTML5 Progressive Web App (PWA), the game combines kingdom simulation, narrative RPG mechanics, procedural events, court intrigue, faction management, quests, achievements, and long-term progression into a highly replayable experience.
 
 ---
 
-## 🎮 Features
+## 🎮 Game Overview
 
-### 👑 Rule Your Kingdom
+In a kingdom where every decree echoes through history, you must balance power, prosperity, diplomacy, and survival.
 
-Manage critical kingdom resources:
+Hear petitions from citizens, nobles, merchants, scholars, explorers, and patent professionals. Build relationships with influential factions, overcome disasters, complete epic quests, discover legendary relics, and guide your kingdom from a humble settlement to an Immortal Empire.
+
+Every playthrough creates a unique story.
+
+---
+
+## ✨ Key Features
+
+### 👑 Kingdom Management
+
+Manage critical resources:
 
 - Gold
 - Military
@@ -24,73 +34,39 @@ Manage critical kingdom resources:
 - Influence
 - Knowledge
 
-Every choice impacts one or more aspects of your kingdom.
-
 ---
 
 ### ⚖️ AI Court Mode
 
-Hear petitions from:
+Subjects regularly appear before your throne bringing:
 
-- Farmers
-- Merchants
-- Nobles
-- Priests
-- Soldiers
-- Scholars
-- Explorers
-- Patent Professionals
+- Disputes
+- Opportunities
+- Mysteries
+- Trade proposals
+- Criminal investigations
+- Political conflicts
+- Requests for royal support
 
-Choose how to respond:
-
-- Approve
-- Reject
-- Investigate
-- Compromise
-- Delay
-- Delegate
-
-Court decisions create future opportunities, conflicts, and storylines.
+Your decisions influence future storylines, factions, and kingdom development.
 
 ---
 
-### 🌍 Living Consequence System
+### 🌍 Living Consequence Engine
 
-Actions have consequences that may unfold years later.
+Choices create:
 
-Examples:
+- Immediate outcomes
+- Mid-term effects
+- Long-term consequences
 
-- Fund a scholar → Discover ancient magic.
-- Welcome refugees → Population growth or social unrest.
-- Support patent professionals and researchers → Groundbreaking innovations or unintended consequences.
-- Raise taxes → Economic growth or rebellion.
-
-Every kingdom develops differently.
-
----
-
-### 🏰 Kingdom Progression
-
-Expand your realm through multiple stages:
-
-1. Village
-2. Settlement
-3. Town
-4. City
-5. Kingdom
-6. Great Kingdom
-7. Empire
-8. Grand Empire
-9. Legendary Empire
-10. Immortal Empire
-
-Unlock new events, systems, and challenges as your kingdom grows.
+A minor decision today may become a kingdom-defining event years later.
 
 ---
 
 ### 🤝 Dynamic Factions
 
-Balance the interests of competing groups:
+Manage the interests of:
 
 - Nobles
 - Merchants
@@ -101,96 +77,89 @@ Balance the interests of competing groups:
 - Explorers
 - Artisans
 
-Ignoring one faction may strengthen another.
+Each faction has goals, influence, and loyalties.
 
 ---
 
-### 📜 Quests & Adventures
+### 📜 Procedural Quests
 
-Embark on procedural quest chains:
+Embark on adventures involving:
 
-- Recover ancient relics
-- Negotiate treaties
-- Explore lost lands
-- Defeat dangerous cults
-- Discover forgotten civilizations
-
-Quest outcomes affect future events.
+- Ancient Relics
+- Lost Civilizations
+- Diplomatic Missions
+- Legendary Creatures
+- Forgotten Magic
 
 ---
 
 ### 🐉 Legendary Events
 
-Encounter rare world-changing events:
+Rare encounters include:
 
-- Dragon invasions
-- Forgotten gods
-- Ancient titans
-- Magical portals
-- Lost kingdoms
-- Mythic artifacts
-
-Every playthrough contains unique surprises.
+- Dragon Invasions
+- Ancient Titans
+- Forgotten Gods
+- Portal Events
+- Mythical Kingdoms
+- World-Changing Discoveries
 
 ---
 
 ### 🏆 Achievements & Badges
 
-Unlock achievements such as:
+Unlock and collect:
 
 - Dragon Slayer
 - Master Diplomat
-- Golden Merchant
-- People's Monarch
 - Architect of Destiny
+- People's Monarch
 - Keeper of Knowledge
+- Golden Merchant
 
-Showcase your accomplishments in a dedicated Badge Gallery.
+And many more.
 
 ---
 
-### 📈 Statistics & Analytics
+### 📈 Statistics Dashboard
 
-Track detailed kingdom metrics:
+Review:
 
-- Years Ruled
+- Kingdom Growth
 - Court Cases Heard
 - Gold Earned
-- Alliances Formed
 - Wars Fought
-- Quests Completed
+- Alliances Formed
 - Population Growth
 - Legendary Events Triggered
 
-Includes interactive charts and visual reports.
+Interactive graphs visualize your reign's progress.
 
 ---
 
-### 📖 Interactive Timeline
+### 📖 Historical Timeline
 
-Review your kingdom's history through a chronological timeline containing:
+Your kingdom automatically records:
 
-- Major decisions
+- Major Decisions
 - Wars
-- Alliances
-- Legendary discoveries
-- Coronations
+- Discoveries
 - Achievements
+- Legendary Events
+- Kingdom Milestones
 
-Your choices become part of the kingdom's permanent chronicle.
+Relive your reign through an interactive timeline.
 
 ---
 
 ### 🏅 Leaderboards & High Scores
 
-Compete against previous kingdoms.
-
 Track:
 
 - Longest Reign
-- Highest Kingdom Score
-- Most Prosperous Empire
-- Greatest Military Power
+- Greatest Empire
+- Highest Reputation
+- Richest Kingdom
 - Most Achievements Earned
 
 Stored locally across sessions.
@@ -200,48 +169,46 @@ Stored locally across sessions.
 ## 🎲 Game Modes
 
 ### Story Campaign
-Experience a narrative-driven progression with multiple endings.
+Experience a branching narrative with multiple endings.
 
 ### Endless Kingdom
-Build and manage your kingdom indefinitely.
-
-### Timed Challenge Mode
-Survive and thrive within a fixed time limit.
-
-### Daily Challenge
-Compete using the same daily scenario as all players.
+Build your empire indefinitely.
 
 ### Dynasty Mode
-Pass your kingdom and traits to future generations.
+Pass the throne through generations.
+
+### Timed Challenge
+Survive within a fixed timeframe.
+
+### Daily Challenge
+Compete using a shared daily scenario.
 
 ### Sandbox Mode
-Play with customized settings and fewer restrictions.
+Customize your kingdom experience.
 
 ### Iron Crown Challenge
-For experienced strategists seeking the ultimate test.
+For elite rulers seeking the ultimate test.
 
 ---
 
-## 🎯 Gameplay Goals
+## 🎯 Objectives
 
-Examples of long-term objectives:
+Possible long-term goals include:
 
+- Reach Immortal Empire status.
 - Rule for 100 years.
-- Reach Legendary Empire status.
+- Complete all quest chains.
 - Unlock all achievements.
-- Maintain a Golden Age.
-- Establish peace among all factions.
-- Complete every major questline.
+- Build a Golden Age kingdom.
 - Discover every legendary event.
-- Build an Immortal Empire.
-- Maximise all kingdom resources simultaneously.
-- Earn a place on the Hall of Legends leaderboard.
+- Unite all factions peacefully.
+- Create a kingdom remembered throughout history.
 
 ---
 
 ## 🎨 Themes
 
-Switch between multiple visual themes:
+Choose from multiple visual themes:
 
 - Royal Dark
 - Golden Throne
@@ -253,9 +220,9 @@ Switch between multiple visual themes:
 
 ---
 
-## ♿ Accessibility Features
+## ♿ Accessibility
 
-Designed for everyone:
+Built with accessibility in mind:
 
 - Keyboard Navigation
 - Screen Reader Support
@@ -263,7 +230,6 @@ Designed for everyone:
 - Reduced Motion Mode
 - Large Text Mode
 - Focus Indicators
-- Accessible UI Elements
 
 ---
 
@@ -288,75 +254,127 @@ Designed for everyone:
 
 ## 🔊 Audio Controls
 
-Procedural fantasy sound system powered by the Web Audio API.
+Custom fantasy audio system powered by the Web Audio API.
 
 Includes:
 
-- Background Music
-- Battle Themes
+- Ambient Music
 - Court Themes
-- Event Sounds
-- Achievement Sounds
-- Victory Music
+- Battle Sounds
+- Achievement Effects
+- Victory Themes
 
-User controls:
+Customizable:
 
 - Master Volume
 - Music Volume
 - Effects Volume
-- Mute
+- Mute Controls
 
 ---
 
-## 📱 Progressive Web App
+## 📂 Project Structure
 
-Install and play anywhere.
+```text
+echoes-of-the-iron-crown/
+│
+├── index.html
+├── styles.css
+├── app.js
+├── service-worker.js
+├── manifest.json
+│
+├── assets/
+│   ├── icons/
+│   ├── images/
+│   └── sounds/
+│
+└── README.md
+```
 
-Features:
+### File Descriptions
 
-- Offline Play
-- Installable PWA
-- Fast Loading
-- Local Save Storage
-- Automatic Updates
-- Mobile and Desktop Support
+#### index.html
+
+Main application entry point.
+
+Contains:
+
+- Application layout
+- UI components
+- Navigation
+- Modal containers
+- Accessibility elements
+
+#### styles.css
+
+Contains all visual styling:
+
+- Themes
+- Responsive layouts
+- Animations
+- Accessibility styles
+- Dark mode support
+
+#### app.js
+
+Main game engine.
+
+Handles:
+
+- Game Logic
+- Resource Management
+- Court System
+- Event Generation
+- Saves & Loading
+- Quests
+- Achievements
+- Statistics
+- Leaderboards
+- Timeline
+
+#### service-worker.js
+
+Provides:
+
+- Offline support
+- Asset caching
+- Faster loading
+- PWA functionality
+
+#### manifest.json
+
+Defines:
+
+- App metadata
+- Icons
+- Theme colors
+- Display mode
+- Install configuration
 
 ---
 
 ## 🚀 Installation
 
-### Option 1: Run Locally
-
-1. Download or clone the repository.
+### Clone Repository
 
 ```bash
 git clone https://github.com/your-username/echoes-of-the-iron-crown.git
 ```
 
-2. Navigate to the project directory.
+### Navigate to Project
 
 ```bash
 cd echoes-of-the-iron-crown
 ```
 
-3. Open `index.html` in a modern browser.
-
-Supported browsers:
-
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
-- Brave
-- Opera
-- Safari
-
 ---
 
-### Option 2: Run with a Local Web Server (Recommended)
+### Run Locally
 
-Because the game uses Service Workers and PWA functionality, serve it through a local web server.
+Because the application uses Service Workers, use a local web server.
 
-Using Python:
+Python:
 
 ```bash
 python -m http.server 8000
@@ -370,38 +388,36 @@ http://localhost:8000
 
 ---
 
-### Option 3: Deploy Online
+### Deploy Online
 
 Compatible with:
 
 - GitHub Pages
-- Cloudflare Pages
 - Netlify
 - Vercel
+- Cloudflare Pages
 - Firebase Hosting
 - Azure Static Web Apps
 
-Upload:
-
-- index.html
-- manifest.json
-- service-worker.js
-
-and supporting assets.
+Upload all project files while preserving the folder structure.
 
 ---
 
-### 📲 Install as an App
+## 📱 Install as a PWA
 
-After opening the game:
+### Desktop
 
-#### Google Chrome
+#### Chrome
 
 Menu → Install Echoes of the Iron Crown™
 
-#### Microsoft Edge
+#### Edge
 
-Menu → Apps → Install this site as an app
+Menu → Apps → Install this Site as an App
+
+---
+
+### Mobile
 
 #### Android
 
@@ -411,11 +427,11 @@ Add to Home Screen
 
 Share → Add to Home Screen
 
-The game will then function like a native application and support offline play after its first load.
+The game supports offline play after installation.
 
 ---
 
-### 💾 Save Data
+## 💾 Save System
 
 The game automatically stores:
 
@@ -428,11 +444,13 @@ The game automatically stores:
 - Themes
 - Difficulty Preferences
 
-Use Export and Import features for backups and migration.
+Data is stored using browser Local Storage.
+
+Users may export and import save files.
 
 ---
 
-## 💾 Export & Sharing
+## 📤 Export & Sharing
 
 Export your kingdom as:
 
@@ -442,13 +460,13 @@ Export your kingdom as:
 
 Share:
 
-- Kingdom Statistics
-- Achievement Progress
-- Timeline Stories
-- Reign Summaries
+- Reign Summary
+- Statistics
+- Achievements
+- Timelines
 - Screenshots
 
-Perfect for showcasing legendary reigns on social media.
+Perfect for social media and community challenges.
 
 ---
 
@@ -459,36 +477,23 @@ Perfect for showcasing legendary reigns on social media.
 - Vanilla JavaScript (ES6+)
 - Progressive Web App (PWA)
 - Service Workers
-- Canvas-Based Visualizations
+- Local Storage
 - SVG Graphics
-- Local Storage Persistence
+- Canvas Visualizations
+- Web Audio API
 
-No external frameworks or dependencies.
+No frameworks.
+No external dependencies.
 
 ---
 
 ## 🌟 Project Vision
 
-Echoes of the Iron Crown™ combines deep strategy, narrative storytelling, kingdom simulation, and long-term progression into a single accessible experience.
+Echoes of the Iron Crown™ combines kingdom strategy, role-playing, procedural storytelling, and long-term progression into a single accessible experience.
 
-Every decision creates lasting consequences, allowing players to build their own unique kingdom history. Whether playing for a few minutes or guiding a dynasty across generations, no two reigns should ever feel the same.
+Every kingdom tells a different story. Every ruler leaves a different legacy.
 
-The game aims to deliver the accessibility of casual strategy games while providing the depth and replayability typically found in premium kingdom-management and role-playing titles.
-
----
-
-## 🚀 Getting Started
-
-1. Launch the game.
-2. Start a new kingdom.
-3. Make your first royal decree.
-4. Hear petitions from your people.
-5. Build alliances, manage factions, and survive challenges.
-6. Grow your kingdom into a legendary empire.
-
-Remember:
-
-> Every choice becomes history. Every history becomes destiny.
+No two reigns should ever be the same.
 
 ---
 
@@ -508,7 +513,7 @@ Copyright © 2026 Subin Khullar.
 
 All Rights Reserved.
 
-This software, artwork, game design, concepts, content, documentation, and associated intellectual property may not be copied, modified, distributed, published, or reproduced without explicit written permission from the author.
+This software, artwork, game mechanics, game design, storyline concepts, documentation, and associated intellectual property may not be copied, modified, distributed, published, resold, or reproduced without explicit written permission from the author.
 
 ---
 
